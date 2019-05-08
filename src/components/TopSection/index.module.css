@@ -1,0 +1,13 @@
+.top {
+  text-align: center;
+}
+
+.top__container__logo {
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+
+.top__logo {
+  margin: 15% 30%;
+}

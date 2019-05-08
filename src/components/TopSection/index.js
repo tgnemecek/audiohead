@@ -1,0 +1,18 @@
+import React from 'react';
+
+import styles from './index.module.css';
+
+export default class TopSection extends React.Component {
+  render() {
+    return (
+      <div className={styles.top}>
+        <img src="http://www.audiohead.cx/wp-content/uploads/2016/08/ezgif.com-crop.gif" width="100%"/>
+        <div className={styles.top__container__logo}>
+          <div className={styles.top__logo}>
+            <img src="http://www.audiohead.cx/wp-content/uploads/2016/08/AUDIOHEAD.png" width="100%"/>
+          </div>
+        </div>
+      </div>
+    )
+  }
+}

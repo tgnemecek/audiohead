@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 300;
+  margin-bottom: 1.4rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.4rem;
+}
+
+p {
+  margin-bottom: 1.4rem;
+}
+
+a {
+  color: black;
+}
+
+ul, ol {
+  padding-left: 1.4rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+textarea {
+  overflow: hidden;
+}

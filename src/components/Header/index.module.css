@@ -1,0 +1,17 @@
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: black;
+  line-height: 0;
+  text-align: center;
+  z-index: 999;
+  opacity: 0.8;
+}
+
+.header button {
+  width: 150px;
+  padding: 20px 0;
+  background: none;
+  border: none;
+  color: white;
+}

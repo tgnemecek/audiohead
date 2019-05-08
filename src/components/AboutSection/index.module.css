@@ -1,0 +1,13 @@
+.about__icon {
+  position: absolute;
+  margin-left: -50px;
+  font-size: 6rem;
+  font-family: "Times New Roman";
+  transform: rotate(-180deg);
+}
+
+.about__text {
+  margin: 0 20%;
+  font-size: 1.4rem;
+  text-align: left;
+}
