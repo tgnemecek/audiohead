@@ -6,8 +6,35 @@
   position: absolute;
   width: 100%;
   top: 0;
+  animation-name: logo--scale;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  z-index: 2;
 }
 
 .top__logo {
   margin: 15% 30%;
+  animation-name: logo--margins;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes logo--scale {
+  from {
+    width: 100%
+  }
+  to {
+    width: 10%
+  }
+}
+
+@keyframes logo--margins {
+  /* from {
+    margin: 15% 30%;
+  }
+  to {
+    margin: 1%
+  } */
 }

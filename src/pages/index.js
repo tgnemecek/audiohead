@@ -17,6 +17,8 @@ export default class HomePage extends React.Component {
     this.sections = [
       {value: "top", title: "Top"},
       {value: "services", title: "Services"},
+      {value: "about", title: "About"},
+      {value: "works", title: "Works"},
       {value: "contact", title: "Contact"}
     ];
   }

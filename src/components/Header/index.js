@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from "gatsby";
 import styles from './index.module.css';
 
 export default class Header extends React.Component {
@@ -11,7 +11,11 @@ export default class Header extends React.Component {
     }
 
     return this.props.sections.map((section, i) => {
-      return <button key={i} value={section.value} onClick={goToSection}>{section.title}</button>
+      return (
+        <div key={i} className={styles.header__link}>
+          <Link to={"/#"+section.value} onClick={goToSection}>{section.title}</Link>
+        </div>
+      )
     })
   }
 

@@ -24,7 +24,7 @@ export default class ContactSection extends React.Component {
 
   render() {
     return (
-      <div className={styles.contact}>
+      <div id="contact" className={styles.contact}>
         <h2>Contact</h2>
         <form onSubmit={this.onSubmit}>
           <div>

@@ -20,5 +20,5 @@
     transform: scaleY(0);
     transform-origin: top;
     transition: transform 0.25s;
-    width: 250px;
+    width: 20%;
 }
