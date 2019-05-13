@@ -1,7 +1,19 @@
 .works {
+  padding: 5% 0;
   text-align: center;
+}
+
+.filter {
+  display: inline-block;
+  margin: 10px;
+  padding: 5px;
+  color: grey;
+  border-radius: 50px;
+  border: none;
+  background: none;
 }
 
 .works__grid {
   line-height: 0px;
+  margin-top: 20px;
 }

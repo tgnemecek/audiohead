@@ -1,5 +1,11 @@
+.contact {
+  padding: 5% 20%;
+  background-image: url("images/home/shapes-glitch.png");
+  background-position: center;
+  background-size: 100%;
+}
+
 .contact form {
-  margin: 0 15%;
   text-align: left;
   font-size: 1.4rem;
 }

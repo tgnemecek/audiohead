@@ -11,10 +11,6 @@
   opacity: 0.8;
 }
 
-.header__logo {
-  position: absolute;
-}
-
 .header__link {
   color: white;
   display: inline-block;

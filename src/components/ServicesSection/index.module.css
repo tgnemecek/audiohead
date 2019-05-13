@@ -1,3 +1,6 @@
 .services {
-  margin: 0 15%;
+  padding: 5% 15%;
+  background-image: url("images/home/shapes-glitch.png");
+  background-position: center;
+  background-size: 140%;
 }

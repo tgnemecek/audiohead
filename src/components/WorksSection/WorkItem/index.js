@@ -12,6 +12,7 @@ export default class WorkItem extends React.Component {
     }
   }
   render() {
+    if (this.props.filter !== "all" && this.props.category !== this.props.filter) return null;
     return (
       <div className={styles.works__item} style={this.style}>
         <Link to="/work"/>

@@ -1,43 +1,10 @@
 .top {
   text-align: center;
+  background-image: url("http://www.audiohead.cx/wp-content/uploads/2016/08/ezgif.com-crop.gif");
+  background-size: cover;
+  height: 900px;
 }
 
-.top__container__logo {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  padding: 1%;
-  animation-name: logo--scale;
-  animation-duration: 5s;
-  animation-delay: 2s;
-  animation-fill-mode: forwards;
-  z-index: 2;
-}
-
-.top__logo {
-  /* margin: 15% 30%; */
-  overflow: hidden;
-  margin-bottom: -100px;
-  animation-name: logo--margins;
-  animation-duration: 5s;
-  animation-delay: 2s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes logo--scale {
-  from {
-    width: 100%
-  }
-  to {
-    width: 10%
-  }
-}
-
-@keyframes logo--margins {
-  /* from {
-    margin: 15% 30%;
-  }
-  to {
-    margin: 1%
-  } */
+.top__video {
+  margin-top: 200px;
 }

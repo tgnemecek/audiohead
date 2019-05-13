@@ -22,11 +22,6 @@ export default class Header extends React.Component {
   render() {
     return (
       <div className={styles.header__container}>
-        <div className={styles.top__container__logo}>
-          <div className={styles.header__logo}>
-            <img src="http://www.audiohead.cx/wp-content/uploads/2016/08/AUDIOHEAD.png" width="5%"/>
-          </div>
-        </div>
         <div className={styles.header}>
           {this.renderMenu()}
         </div>

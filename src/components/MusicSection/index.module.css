@@ -1,0 +1,12 @@
+.music {
+  padding: 5% 20%;
+  background-image: url("images/home/violin-glitch.png");
+  background-position: center;
+  background-size: 140%;
+}
+
+.tab {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 20px;
+}

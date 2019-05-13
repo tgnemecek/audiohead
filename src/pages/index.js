@@ -8,6 +8,7 @@ import TopSection from 'components/TopSection/index';
 import ServicesSection from 'components/ServicesSection/index';
 import AboutSection from 'components/AboutSection/index';
 import WorksSection from 'components/WorksSection/index';
+import MusicSection from 'components/MusicSection/index';
 import ContactSection from 'components/ContactSection/index';
 import Footer from 'components/Footer/index';
 
@@ -36,6 +37,7 @@ export default class HomePage extends React.Component {
           <ServicesSection/>
           <AboutSection/>
           <WorksSection/>
+          <MusicSection/>
           <ContactSection/>
         </div>
         <Footer/>
