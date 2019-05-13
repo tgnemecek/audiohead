@@ -14,14 +14,15 @@ export default class WorkItem extends React.Component {
   render() {
     if (this.props.filter !== "all" && this.props.category !== this.props.filter) return null;
     return (
-      <div className={styles.works__item} style={this.style}>
-        <Link to="/work"/>
-        <div>
-          <div>Title</div>
-          <div>Subtitle</div>
+      <Link to="/work" className={styles.works__item} style={this.style} state={this.props}>
+        <div className={styles.works__item__image}>
+          <img src={this.props.thumbnail} width="100%"/>
         </div>
-        <img src="http://www.audiohead.cx/wp-content/uploads/2017/08/Icon-180.png" width="100%"/>
-      </div>
+        <div className={styles.works__item__text}>
+          <h3>'{this.props.title}'</h3>
+          <h4>({this.props.subtitle})</h4>
+        </div>
+      </Link>
     )
   }
 }

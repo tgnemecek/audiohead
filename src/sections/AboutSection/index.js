@@ -5,7 +5,7 @@ import styles from './index.module.css';
 export default class AboutSection extends React.Component {
   render() {
     return (
-      <div className={styles.about}>
+      <div id="about" className={styles.about}>
         <h2>About</h2>
         <div className={styles.about__text}>
           <div className={styles.about__icon}>,,</div>

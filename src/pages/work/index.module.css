@@ -1,0 +1,33 @@
+.work__container {
+  min-height: 94vh;
+  background-size: cover;
+}
+
+.work__header {
+  position: relative;
+  background-color: rgba(58, 58, 58, .8);
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.work__pageButton {
+  position: absolute;
+  top: 0;
+  margin: 60px;
+  color: white;
+  background: none;
+  border: none;
+}
+
+.work__content {
+  margin: 100px 20% 0 20%;
+  background: #168d81;
+  border-radius: 10px;
+  padding: 20px 50px;
+  text-align: left;
+}
+
+.work__extra {
+  margin: 100px 20% 0 20%;
+  padding: 20px 0;
+}

@@ -4,34 +4,19 @@ import { Link } from "gatsby";
 import 'styles/global.css';
 
 import Header from 'components/Header/index';
-import TopSection from 'components/TopSection/index';
-import ServicesSection from 'components/ServicesSection/index';
-import AboutSection from 'components/AboutSection/index';
-import WorksSection from 'components/WorksSection/index';
-import MusicSection from 'components/MusicSection/index';
-import ContactSection from 'components/ContactSection/index';
+import TopSection from 'sections/TopSection/index';
+import ServicesSection from 'sections/ServicesSection/index';
+import AboutSection from 'sections/AboutSection/index';
+import WorksSection from 'sections/WorksSection/index';
+import MusicSection from 'sections/MusicSection/index';
+import ContactSection from 'sections/ContactSection/index';
 import Footer from 'components/Footer/index';
 
 export default class HomePage extends React.Component {
-  constructor(props) {
-    super(props);
-    this.sections = [
-      {value: "top", title: "Top"},
-      {value: "services", title: "Services"},
-      {value: "about", title: "About"},
-      {value: "works", title: "Works"},
-      {value: "contact", title: "Contact"}
-    ];
-  }
-
-  goToSection = () => {
-
-  }
-
   render() {
     return (
       <div>
-        <Header sections={this.sections} goToSection={this.goToSection}/>
+        <Header/>
         <div className="content">
           <TopSection/>
           <ServicesSection/>

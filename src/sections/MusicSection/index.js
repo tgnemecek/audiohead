@@ -16,7 +16,7 @@ export default class MusicSection extends React.Component {
 
   render() {
     return (
-      <div className={styles.music}>
+      <div id="music" className={styles.music}>
         <h2>Original Music</h2>
         <Tab tab={this.state.tab} changeTab={this.changeTab}/>
         <Soundcloud tab={this.state.tab}/>
@@ -90,7 +90,7 @@ class Soundcloud extends React.Component {
     return (
       <iframe
         width="100%" height="415"
-        scrolling="no" frameborder="no"
+        scrolling="no" frameBorder="no"
         src={this.getSource()}>
       </iframe>
     )

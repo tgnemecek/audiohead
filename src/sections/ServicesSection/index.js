@@ -7,7 +7,7 @@ import Service from './Service/index';
 export default class ServicesSection extends React.Component {
   render() {
     return (
-      <div className={styles.services}>
+      <div id="services" className={styles.services}>
         <h2>Services</h2>
         <Block columns={4}>
           <Service

@@ -16,7 +16,7 @@ export default class TopSection extends React.Component {
 class TopVideo extends React.Component {
   render() {
     return (
-      <div>
+      <div id="top">
         <iframe width="900" height="500" className={styles.top__video}
           src="https://www.youtube.com/embed/O8-xW1Q2udg">
         </iframe>

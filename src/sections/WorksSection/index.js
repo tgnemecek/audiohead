@@ -2,6 +2,7 @@ import React from 'react';
 
 import styles from './index.module.css';
 import WorkItem from './WorkItem/index';
+import { workList } from 'startup/work-list/index';
 
 export default class WorksSection extends React.Component {
   constructor(props) {
@@ -15,20 +16,19 @@ export default class WorksSection extends React.Component {
     this.setState({ filter: e.target.value });
   }
 
+  renderWorks = () => {
+    return workList.map((work, i, array) => {
+      return <WorkItem key={i} filter={this.state.filter} index={i} length={array.length} {...work}/>
+    })
+  }
+
   render() {
     return (
-      <div className={styles.works}>
+      <div id="works" className={styles.works}>
         <h2>Main Works</h2>
         <Filter filter={this.state.filter} changeFilter={this.changeFilter}/>
         <div className={styles.works__grid}>
-          <WorkItem filter={this.state.filter}/>
-          <WorkItem filter={this.state.filter}/>
-          <WorkItem filter={this.state.filter}/>
-          <WorkItem filter={this.state.filter}/>
-          <WorkItem filter={this.state.filter}/>
-          <WorkItem filter={this.state.filter}/>
-          <WorkItem filter={this.state.filter}/>
-          <WorkItem filter={this.state.filter}/>
+          {this.renderWorks()}
         </div>
       </div>
     )

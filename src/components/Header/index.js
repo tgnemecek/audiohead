@@ -2,18 +2,14 @@ import React from 'react';
 import { Link } from "gatsby";
 import styles from './index.module.css';
 
+import { sectionsList } from 'startup/sections-list/index';
+
 export default class Header extends React.Component {
-
   renderMenu = () => {
-    const goToSection = (e) => {
-      var value = e.target.value;
-      this.props.goToSection(value);
-    }
-
-    return this.props.sections.map((section, i) => {
+    return sectionsList.map((section, i) => {
       return (
         <div key={i} className={styles.header__link}>
-          <Link to={"/#"+section.value} onClick={goToSection}>{section.title}</Link>
+          <Link to={"/#"+section.value}>{section.title}</Link>
         </div>
       )
     })
@@ -21,12 +17,13 @@ export default class Header extends React.Component {
 
   render() {
     return (
-      <div className={styles.header__container}>
-        <div className={styles.header}>
-          {this.renderMenu()}
+      <>
+        <div className={styles.header__container} style={{position: this.props.position || "fixed"}}>
+          <div className={styles.header}>
+            {this.renderMenu()}
+          </div>
         </div>
-      </div>
-
+      </>
     )
   }
 }
